@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoTune - Lo-Fi Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="player-title">LoTune 🎵</h1>
+        <div class="music-player">
+            <div class="vinyl-container">
+                <img src="images/default-cover.png" alt="Album Cover" class="album-cover">
+                <div class="vinyl-ring"></div>
+            </div>
+            
+            <div class="song-info">
+                <h2 class="title">Select a song</h2>
+                <p class="artist">Artist</p>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time">
+                    <span class="current">0:00</span>
+                    <span class="duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="control-btn" id="prev">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button class="control-btn play-btn" id="play">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button class="control-btn" id="next">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+
+            <div class="volume-container">
+                <i class="fas fa-volume-up"></i>
+                <input type="range" class="volume-slider" min="0" max="100" value="100">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
